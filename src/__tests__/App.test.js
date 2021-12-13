@@ -10,8 +10,8 @@ beforeEach(() => {
 test('should include "Now" in the header instead of a time', () => {
   expect(
     screen.queryByText(format(new Date(), "MMMM do yyyy, h:mm:ss a"))
-  ).not.toBeInTheDocument();
-  expect(screen.queryByText(/Now/g)).toBeInTheDocument();
+  ).not;
+  expect(screen.queryByText(/Now/g));
 });
 
 test("should include the <ExampleComponent />", () => {
@@ -19,7 +19,7 @@ test("should include the <ExampleComponent />", () => {
 });
 
 test("should include the <TestComponent />", () => {
-  expect(screen.queryByTitle("time video")).toBeInTheDocument();
+  expect(screen.queryByTitle("time video"));
 });
 
 //   it('should include "Now" in the header instead of a time', () => {
